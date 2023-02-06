@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Instant_Run_Off_Voting_System
+﻿namespace Instant_Run_Off_Voting_System
 {
     public class Candidate
     {

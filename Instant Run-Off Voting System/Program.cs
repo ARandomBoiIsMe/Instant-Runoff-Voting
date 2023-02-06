@@ -19,6 +19,7 @@ namespace Instant_Run_Off_Voting_System
 
             //Compares votes and generates winner
             CompareVotes(votes, candidates);
+
             Console.ReadLine();
         }
         
@@ -106,7 +107,7 @@ namespace Instant_Run_Off_Voting_System
             if (isTie(len, candidates) == true)
                 return true;
 
-            if (MaxVotes(candidates) < Math.Ceiling(voters / 2.0))
+            if (MaxVotes(candidates) <= Math.Ceiling(voters / 2.0))
                 return false;
 
             Console.WriteLine("-----------------------");
@@ -187,7 +188,7 @@ namespace Instant_Run_Off_Voting_System
             }
         }
 
-        //Find the least amount of votes in the election
+        //Finds the least amount of votes in the election
         static int MinVotes(int len, Candidate[] candidates)
         {
             int min = len;
